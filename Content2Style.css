@@ -1,0 +1,45 @@
+/* *{
+    border: 1px solid white;
+} */
+
+
+
+#Content2{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4,250px);
+    grid-template-rows: 200px 200px;
+    justify-content: space-around;
+    gap: 20px;
+    /* box-sizing: border-box; */
+}
+
+
+.ProductX1{
+    position: relative;
+}
+
+.top-left{
+    position: absolute;
+    background-color: black;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    padding: 5px;
+}
+
+.ProductX1 img{
+    width: 200px;
+    height: 200px;
+}
+
+.ProductX1 img:hover{
+        opacity:0.4;
+        filter:alpha(opacity=100);
+}
+
+
