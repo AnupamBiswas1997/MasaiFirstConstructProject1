@@ -1,14 +1,7 @@
-/* *{
-    border: 1px solid;
-} */
-
-
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    
 }
 
 #UltimateParent {
@@ -20,13 +13,12 @@ body {
     align-items: center;
     background-color: #ffffff;
     color: rgb(14, 14, 14);
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 #NavBar1 {
     justify-content: space-between;
-    /* padding: 10px 10px;  */
-    height: 90px; 
+    height: 90px;
 }
 
 #NavBar1 > div {
@@ -35,7 +27,7 @@ body {
 
 #NavLogo img {
     max-width: 100%;
-    max-height: 100%; 
+    max-height: 100%;
 }
 
 #searchBar {
@@ -46,16 +38,17 @@ body {
 
 #searchBar input {
     width: 100%;
-    max-width: 350px; 
-    height: 20px; 
+    max-width: 350px;
+    height: 20px;
     padding: 10px;
     font-weight: 400;
-    font-size: 16px; 
+    font-size: 16px;
 }
 
 #buttonHovers {
     display: flex;
     justify-content: space-around;
+    position: relative;
 }
 
 #buttonHovers button {
@@ -65,9 +58,9 @@ body {
     padding: 10px;
     cursor: pointer;
     font-weight: 400;
-    font-size: 16px; 
-    height: 40px; 
-    width: 100px; 
+    font-size: 16px;
+    height: 40px;
+    width: 100px;
 }
 
 #buttonHovers button:hover {
@@ -76,13 +69,12 @@ body {
 
 #NavBar2 {
     justify-content: flex-start;
-    
     box-shadow: 0 4px 2px -2px gray;
     width: 100%;
-    height: 60px; 
-    padding: 10px; 
+    height: 60px;
+    padding: 10px;
     font-weight: 400;
-    font-size: 16px; 
+    font-size: 16px;
 }
 
 .nav-button {
@@ -90,10 +82,50 @@ body {
     margin-right: 20px;
     padding: 10px 15px;
     cursor: pointer;
-    height: 40px; 
-    width: 80px; 
+    height: 40px;
+    width: 80px;
 }
 
 .nav-button:hover {
     background-color: #f2f2f2;
+}
+
+#signInDropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#signInDropdown p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+#signInDropdown p button {
+    background-color: #0672cb;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#signInDropdown p button:hover {
+    background-color: #ddd;
+}
+
+#buttonHovers:hover #signInDropdown {
+    display: block;
 }

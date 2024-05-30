@@ -8,19 +8,33 @@
     <link rel="stylesheet" href="Content1Style.css">
     <link rel="stylesheet" href="Content2Style.css">
     <link rel="stylesheet" href="Content3Style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="ProductContent1Style.css">
+    <link rel="stylesheet" href="ProductContent2Style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <div id="UltimateParent">
         <div id="NavBar1">
-            <div id="NavLogo"> 
+            <div id="NavLogo">
                 <img src="images/Dell_Nav_Bar_logo.jpg" alt="Dell Brand Logo">
             </div>
-            <div id="searchBar"> 
+            <div id="searchBar">
                 <input type="text" placeholder="Search Dell">
             </div>
-            <div id="buttonHovers"> 
+            <div id="buttonHovers">
                 <button id="NavBarButton1">Sign In</button>
+                <div id="signInDropdown" class="dropdown-content">
+                    <p>Welcome to Dell</p>
+                    <p>My Account</p>
+                    <p>Place orders quickly and easily</p>
+                    <p>View orders and track your shipping status</p>
+                    <p>Create and access a list of your products</p>
+                    <p><button class="dropdown-btn">Sign In</button></p>
+                    <p><button class="dropdown-btn">Create an Account</button></p>
+                    <p><button class="dropdown-btn">Premier Sign In</button></p>
+                    <p><button class="dropdown-btn">Partner Program Sign In</button></p>
+                </div>
                 <button id="NavBarButton2">Contact Us</button>
                 <button id="NavBarButton3">IN/EN</button>
                 <button id="NavBarButton4">Cart</button>
@@ -35,6 +49,57 @@
             <div class="nav-button">About</div>
             <div class="nav-button">Contact</div>
         </div>
+        <div id="ProductContent1">
+            <div id="ProductContent1Part1">
+                <div>
+                    <span class="material-symbols-outlined">home</span>
+                    <span>/ India / Laptop Computers & 2-in-1 PCs</span>
+                </div>
+                <div> <img src="images/ProductPageWindowsLogo.JPG" alt="Windows Logo">
+                    <img src="images/ProductPageIntelLogo.JPG" alt="Intel Logo">
+                </div>
+            </div>
+            <div id="ProductContent1Part2Parent">
+                <div id="ProductContent1Part2">
+                    <p>Laptop Computers & 2-in-1<br>PCs</p>
+                    <p>Shop the best laptops & notebooks from Dell. See<br> top laptop deals today.</p>
+                </div>
+                <div id="ProductContent1Part3">
+                    <img src="images/ProductPageImage1.JPG" alt="Laptops">
+                </div>
+            </div>
+        </div>
+        <div id="ProductContent2">
+            <div id="ProductContent2Part1">
+                <button onclick="sortProducts('price')">Sort by Price</button>
+                <button onclick="sortProducts('name')">Sort by Name</button>
+                <input type="text" id="searchInput" onkeyup="filterProducts()" placeholder="Search for products..">
+            </div>
+            <div id="ProductContent2Part2">
+                <div class="product-card" data-name="Dell Inspiron" data-price="50000">
+                    <img src="images/Product1.jpg" alt="Dell Inspiron">
+                    <h3>Dell Inspiron</h3>
+                    <p>Price: ₹50,000</p>
+                </div>
+                <div class="product-card" data-name="Dell XPS" data-price="150000">
+                    <img src="images/Product2.jpg" alt="Dell XPS">
+                    <h3>Dell XPS</h3>
+                    <p>Price: ₹1,50,000</p>
+                </div>
+                <div class="product-card" data-name="Dell Vostro" data-price="60000">
+                    <img src="images/Product3.jpg" alt="Dell Vostro">
+                    <h3>Dell Vostro</h3>
+                    <p>Price: ₹60,000</p>
+                </div>
+                <div class="product-card" data-name="Dell Latitude" data-price="120000">
+                    <img src="images/Product4.jpg" alt="Dell Latitude">
+                    <h3>Dell Latitude</h3>
+                    <p>Price: ₹1,20,000</p>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="index.js"></script>
+    <script src="index2.js"></script>
 </body>
 </html>
